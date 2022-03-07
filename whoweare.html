@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Baptist West</title>
+    <link rel="stylesheet" href="whoweare.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+       
+        <a href="index.html"><img src="/imgs/logo-small-white-1 1.svg" alt="First Baptist West Logo" class="Logo"></a>
+        <nav class="nav">
+            <ul class="nav-list">
+               <li class="nav-item"><a class="nav-link new" href="#">I'M NEW</a></li>
+               <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+               <li class="nav-item"><a class="nav-link" href="whoweare.html">WHO WE ARE</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">MINISTRIES</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">GIVE</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+               
+            </ul>
+           
+        </nav>
+       
+    </header>
+    <a href="#" class="menubtn" id="mobilebtn">
+        <span class="lineone" id="lineone"></span>
+        <span class="linetwo" id="linetwo"></span>
+        <span class="linethree" id="linethree"></span>
+    </a>
+    <div class="mobilemenu" id="mobilemenu">
+       <a href="#" class="mobilelink new" id="mobilelink">New Here</a>
+       <a href="#" class="mobilelink" id="mobilelink">Who we are</a>
+       <a href="#" class="mobilelink" id="mobilelink">Ministries</a>
+       <a href="#" class="mobilelink" id="mobilelink">Give</a>
+       <a href="#" class="mobilelink" id="mobilelink">Contact</a>
+    </div>
+    <main>
+       <section class="hero">
+           <h1>Who We Are</h1>
+       </section>
+
+       <section class="mission">
+            <h2>Our Mission</h2>
+            <p>First Baptist West is a participating church in the Southern Baptist Convention. We are imperfect people working to grow in our relationship to God through Jesus Christ. We take seriously the commandment of Jesus to “go and make disciples of all nations, baptizing and teaching them to walk in God’s ways”. Our vision for FBW is simple; Love God, Love People and See Lives Change.</p>
+       </section>
+
+       <section class="beliefs">
+           <div class="one">
+                <h3>What We Believe</h3>
+                <p>We believe that Jesus is, “The Way, The Truth and The Life.” Through faith in Him alone we are saved from sins penalty – eternal separation from God. By confessing our sins and believing in Him as Savior and Lord, we become members of God’s family, receiving the gift of eternal and abundant life. As we grow in our relationship with God, He works in us to fulfil His purpose in the world. We approve the statements of the Baptist Faith and Message.</p>
+           </div>
+           <div class="two">
+                
+           </div>
+       </section>
+
+       <section class="staff">
+           <h3>Meet Our Staff</h3>
+           <div class="container">
+               <div class="staffcontent">
+                    <img src="/stafffimgs/harold-scaled.jpeg" alt="" class="staffimg">
+                    <p class="staffname">Harold Gaches</p>
+                    <p class="stafftitle">Pastor</p>
+               </div>
+                <div class="staffcontent">
+                    <img src="/stafffimgs/barry-scaled.jpeg" alt="" class="staffimg">
+                    <p class="staffname">Barry Cornish</p>
+                    <p class="stafftitle"> Associate Pastor</p>
+               </div>
+               <div class="staffcontent">
+                    <img src="/stafffimgs/patrick-scaled.jpeg" alt="" class="staffimg">
+                    <p class="staffname">Patrick Duncan</p>
+                    <p class="stafftitle">Worship and Family Ministries</p>
+               </div>
+               <div class="staffcontent">
+                    <img src="/stafffimgs/john-scaled.jpeg" alt="" class="staffimg">
+                    <p class="staffname">John Song</p>
+                    <p class="stafftitle">Youth Director</p>
+                </div>
+                <div class="staffcontent">
+                    <img src="/stafffimgs/Aura.jpg" alt="" class="staffimg">
+                    <p class="staffname">Aura Silkey</p>
+                    <p class="stafftitle">Children's Director</p>
+               </div>
+               <div class="staffcontent">
+                <img src="/stafffimgs/jacey-scaled.jpeg" alt="" class="staffimg">
+                <p class="staffname">Jacey Franco</p>
+                <p class="stafftitle">Preschool Director</p>
+           </div>
+               
+              
+            </div>
+       </section>
+
+        
+        
+        
+        
+        
+    </main>
+
+    <script>
+        const mobilemenu = document.querySelector('#mobilemenu');
+        const mobilebtn = document.querySelector('#mobilebtn');
+    
+        mobilebtn.onclick = function () {
+            mobilemenu.classList.toggle("open");
+           
+        }
+    </script>
+
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+      
+       
+    </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+            delay: 5000,
+            
+            pauseOnMouseEnter: 'true',
+
+            
+        },
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: 'fade',
+        speed: 1000,
+        
+        
+        
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+        // And if we need scrollbar
+     
+    });
+</script>
+
+
+</body>
+</html>
