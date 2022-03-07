@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Baptist West</title>
+    <link rel="stylesheet" href="livestyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+       
+        <a href="index.html"><img src="/imgs/logo-small-white-1 1.svg" alt="First Baptist West Logo" class="Logo"></a>
+        <nav class="nav">
+            <ul class="nav-list">
+               <li class="nav-item"><a class="nav-link new" href="#">I'M NEW</a></li>
+               <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+               <li class="nav-item"><a class="nav-link" href="whoweare.html">WHO WE ARE</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">MINISTRIES</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">GIVE</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+               
+            </ul>
+           
+        </nav>
+       
+    </header>
+    <a href="#" class="menubtn" id="mobilebtn">
+        <span class="lineone" id="lineone"></span>
+        <span class="linetwo" id="linetwo"></span>
+        <span class="linethree" id="linethree"></span>
+    </a>
+    <div class="mobilemenu" id="mobilemenu">
+       <a href="index.html" class="mobilelink" id="mobilelink">Home</a>
+       <a href="#" class="mobilelink" id="mobilelink">New Here</a>
+       <a href="whoweare.html" class="mobilelink" id="mobilelink">Who we are</a>
+       <a href="#" class="mobilelink" id="mobilelink">Ministries</a>
+       <a href="#" class="mobilelink" id="mobilelink">Give</a>
+       <a href="#" class="mobilelink" id="mobilelink">Contact</a>
+    </div>
+    <main>
+        
+        <section class="herolivestream">
+            
+            <h1>FBW Livestream</h1>
+            
+                <iframe class="video"width="auto" height="auto" src="https://www.youtube.com/embed/SO20S9LdKOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <p>Next Broadcast will be on <br>Sunday, March, 06 2022 @ 11:00 AM</p>
+            <div class="videocontainer">
+                <video src="/videos/Abstract - 12902.mp4" loop muted autoplay></video>
+            </div>
+            
+            
+        </section>
+
+        
+        
+        
+        
+    </main>
+
+    <script>
+        const mobilemenu = document.querySelector('#mobilemenu');
+        const mobilebtn = document.querySelector('#mobilebtn');
+    
+        mobilebtn.onclick = function () {
+            mobilemenu.classList.toggle("open");
+           
+        }
+    </script>
+
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+      
+       
+    </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+            delay: 5000,
+            
+            pauseOnMouseEnter: 'true',
+
+            
+        },
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: 'fade',
+        speed: 1000,
+        
+        
+        
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+        // And if we need scrollbar
+     
+    });
+</script>
+
+
+</body>
+</html>
